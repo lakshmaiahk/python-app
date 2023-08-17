@@ -1,9 +1,7 @@
 import streamlit as st
 
-def main():
-    st.title("Streamlit App")
-    st.write("Hello, Streamlit!")
+st.title("Welcome to Health Universe!")
+st.write("This is a sample application.")
 
-if __name__ == "__main__":
-    main()
-
+alarm_clock = st.slider('hour', 0, 23, 17) # min: 0h, max: 23h, default: 17h
+st.header(alarm_clock) # print in large text
